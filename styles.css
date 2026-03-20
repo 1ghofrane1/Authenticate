@@ -138,6 +138,56 @@ button:hover {
   background: var(--primary-dark);
 }
 
+.auth-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.auth-divider span {
+  margin: 0 0.8rem;
+}
+
+.google-signin {
+  width: 100%;
+  margin-top: 0.8rem;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.google-signin:hover {
+  background: #f8fafc;
+}
+
+.google-signin-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: #ffffff;
+  border: 1px solid #e3e8ee;
+  color: #ea4335;
+}
+
 .links {
   margin-top: 1rem;
   color: var(--muted);

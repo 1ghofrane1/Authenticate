@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediSuivi - Connexion</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="login">
+  <header class="topbar">
+    <div class="brand">
+      <h1>MediSuivi</h1>
+      <p>Portail de suivi patient</p>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Connexion</a>
+      <a href="register.html">Créer un compte</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Connexion</h2>
+      <p class="intro">
+        Connectez-vous pour accéder à l'espace métier de consultation des dossiers patients.
+      </p>
+
+      <form id="login-form" novalidate>
+        <label for="login-email">Adresse e-mail</label>
+        <input
+          type="email"
+          id="login-email"
+          name="email"
+          placeholder="soignant@example.fr"
+          required
+        />
+
+        <label for="login-password">Mot de passe</label>
+        <input
+          type="password"
+          id="login-password"
+          name="password"
+          placeholder="••••••••"
+          required
+        />
+
+        <button type="submit">Se connecter</button>
+      </form>
+
+      <p class="links">
+        <a href="forgot-password.html">Mot de passe oublié ?</a>
+      </p>
+
+      <p class="links">
+        Pas encore de compte ?
+        <a href="register.html">Créer un compte</a>
+      </p>
+
+      <div id="login-message" class="message" aria-live="polite"></div>
+    </section>
+
+    <section class="side-panel">
+      <h3>Contexte métier</h3>
+      <ul>
+        <li>Accès réservé aux professionnels autorisés</li>
+        <li>Consultation d'un tableau de bord santé</li>
+        <li>Simulation d'une authentification déléguée</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
